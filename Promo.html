@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner Vivi | Promo</title>
+
+    <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/css/lightbox.min.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!--navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark main-color">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <a class="navbar-brand me-auto" href="#">Cafe Vivi</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item me-5">
+                        <a class="nav-link " href="index.html"><i class="bi bi-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link " href="Produk.html">Produk</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link active" href="#">Promo</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link " href="Cart.html" tabindex="-1" aria-disabled="true"><i
+                                class="bi bi-cart4"></i>
+                            Keranjang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--banner-->
+    <div class="container-fluid banner2 d-flex align-items-center">
+        <div class="container">
+            <h1 class="text-light text-center mb-3">Semua Promo Buat Anda</h1>
+            <div class="col-md-8 offset-md-2">
+            </div>
+        </div>
+    </div>
+
+    <!--Main Content-->
+    <!-- Promo -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <!--Kategori Promo-->
+            <div class="row justify-content-center mb-5">
+                <div class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                    <button id="SemuaPromoBtn" onclick="showAll()"
+                        class="btn btn-outline-warning w-100 fs-5 active">Semua Promo</button>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                    <button id="PromoDiskonBtn" onclick="showDiskon()" class="btn btn-outline-warning w-100 fs-5">Promo
+                        Diskon</button>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2 mb-3">
+                    <button id="BonusPromoBtn" onclick="showBonus()" class="btn btn-outline-warning w-100 fs-5">Promo
+                        Bonus</button>
+                </div>
+            </div>
+
+            <!--Isi Promo-->
+            <!--Semua Promo-->
+            <div id="SemuaPromo">
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                        <div class="card">
+                            <a href="image/product/chocolate-mousse.jpg" data-lightbox="chocolate mouse"
+                                data-title="chocolate mouse">
+                                <img src="image/product/thumb/chocolate-mousse.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Beli 1 Gratis 1</h5>
+                                <p class="card-text">Setiap 1 pembelian Chocolate mousse gratis 1 lagi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                        <div class="card">
+                            <a href="image/product/coffee.jpg" data-lightbox="Cappuchinno" data-title="Cappuchinno">
+                                <img src="image/product/thumb/coffee.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Gratis Cappuchinno</h5>
+                                <p class="card-text">Gratis Cappuchino jika anda membeli 3 menu paket Promo
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                        <div class="card">
+                            <a href="image/product/brownies.jpg" data-lightbox="Brownies" data-title="Brownies">
+                                <img src="image/product/thumb/brownies.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Gratis Brownies</h5>
+                                <p class="card-text">Gratis Brownies jika anda membeli 4 menu paket Promo
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                        <div class="card">
+                            <a href="image/product/skewer.jpg" data-lightbox="skewer" data-title="skewer">
+                                <img src="image/product/thumb/skewer.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Discount Skewer 20%</h5>
+                                <p class="card-text">Dapatkan Diskon 20% apabila melakukan pembayaran dengan Bank Nagari
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                        <div class="card">
+                            <a href="image/product/cereal.jpg" data-lightbox="cereal" data-title="cereal">
+                                <img src="image/product/thumb/cereal.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Discount Cereal 25%</h5>
+                                <p class="card-text">Dapatkan Diskon 25% apabila total belanja lebih dari Rp 250.000
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                        <div class="card">
+                            <a href="image/product/steak.jpg" data-lightbox="steak" data-title="steak">
+                                <img src="image/product/thumb/steak.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Discount Steak 20%</h5>
+                                <p class="card-text">Dapatkan Diskon 20% apabila melakukan Foto dengan Heryan ^^
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Promo Diskon-->
+            <div id="PromoDiskon">
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                        <div class="card">
+                            <a href="image/product/skewer.jpg" data-lightbox="skewer" data-title="skewer">
+                                <img src="image/product/thumb/skewer.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Discount Skewer 20%</h5>
+                                <p class="card-text">Dapatkan Diskon 20% apabila melakukan pembayaran dengan Bank Nagari
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                        <div class="card">
+                            <a href="image/product/cereal.jpg" data-lightbox="cereal" data-title="cereal">
+                                <img src="image/product/thumb/cereal.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Discount Cereal 25%</h5>
+                                <p class="card-text">Dapatkan Diskon 25% apabila total belanja lebih dari Rp 250.000
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                        <div class="card">
+                            <a href="image/product/steak.jpg" data-lightbox="steak" data-title="steak">
+                                <img src="image/product/thumb/steak.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Discount Steak 20%</h5>
+                                <p class="card-text">Dapatkan Diskon 20% apabila melakukan Foto dengan Heryan ^^
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Promo Bonus-->
+            <div id="PromoBonus">
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                        <div class="card">
+                            <a href="image/product/chocolate-mousse.jpg" data-lightbox="chocolate mouse"
+                                data-title="chocolate mouse">
+                                <img src="image/product/thumb/chocolate-mousse.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Beli 1 Gratis 1</h5>
+                                <p class="card-text">Setiap 1 pembelian Chocolate mousse gratis 1 lagi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                        <div class="card">
+                            <a href="image/product/coffee.jpg" data-lightbox="Cappuchinno" data-title="Cappuchinno">
+                                <img src="image/product/thumb/coffee.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Gratis Cappuchinno</h5>
+                                <p class="card-text">Gratis Cappuchino jika anda membeli 3 menu paket Promo
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                        <div class="card">
+                            <a href="image/product/brownies.jpg" data-lightbox="Brownies" data-title="Brownies">
+                                <img src="image/product/thumb/brownies.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Gratis Brownies</h5>
+                                <p class="card-text">Gratis Brownies jika anda membeli 4 menu paket Promo
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Subscribe-->
+    <div class="container-fluid py-5 content-subscribe text-light">
+        <div class="container">
+            <h5 class="text-center mb-4">Temui Kami</h5>
+            <div class="row justify-content-center">
+                <div class="col-sm-1 d-flex justify-content-center mb-2">
+                    <a href="https://www.facebook.com/heryan.krezz" target="_blank">
+                        <i class="bi bi-facebook fs-4 link-light"></i>
+                    </a>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center mb-2 ">
+                    <a href="https://www.instagram.com/he.rynn" target="_blank">
+                        <i class="bi bi-instagram fs-4 link-light"></i>
+                    </a>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center mb-2">
+                    <a href="#">
+                        <i class="bi bi-twitter fs-4 link-light"></i>
+                    </a>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center mb-2">
+                    <a href="#">
+                        <i class="bi bi-youtube fs-4 link-light"></i>
+                    </a>
+                </div>
+            </div>
+
+            <h5 class="text-center mt-5 mb-0">Subscribe</h5>
+            <p class="text-center font-monospace">untuk informasi tentang promo</p>
+            <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Ketikkan Email"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-warning text-light" type="button" id="button-addon2">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="container-fluid py-3 bg-dark text-light">
+        <div class="container d-flex justify-content-between">
+            <label>&copy;2022 Cafe Vivi</label>
+            <label>Created By Heryan Farezi 1101201036</label>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="bootstrap-5.0.0-dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+    <script>
+        var btnSemuaPromo = $("#SemuaPromoBtn");
+        var btnDiskonPromo = $("#PromoDiskonBtn");
+        var btnBonusPromo = $("#BonusPromoBtn");
+
+        var SemuaPromoView = $("#SemuaPromo");
+        var DiskonPromoView = $("#PromoDiskon");
+        var BonusPromoView = $("#PromoBonus");
+
+        DiskonPromoView.hide();
+        BonusPromoView.hide();
+
+        function showAll() {
+            btnSemuaPromo.addClass('active');
+            btnBonusPromo.removeClass('active');
+            btnDiskonPromo.removeClass('active');
+
+            SemuaPromoView.show(1000);
+            BonusPromoView.hide(1000);
+            DiskonPromoView.hide(1000);
+
+
+        }
+
+        function showDiskon() {
+            btnSemuaPromo.removeClass('active');
+            btnBonusPromo.removeClass('active');
+            btnDiskonPromo.addClass('active');
+
+            SemuaPromoView.hide(1000);
+            BonusPromoView.hide(1000);
+            DiskonPromoView.show(1000);
+        }
+
+        function showBonus() {
+            btnSemuaPromo.removeClass('active');
+            btnDiskonPromo.removeClass('active');
+            btnBonusPromo.addClass('active');
+
+            DiskonPromoView.hide(1000);
+            SemuaPromoView.hide(1000);
+            BonusPromoView.show(1000);
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
